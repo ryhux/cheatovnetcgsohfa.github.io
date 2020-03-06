@@ -1,0 +1,170 @@
+body {
+	background-color: #ffffff;
+	text-align: center;
+}
+button {
+	background-color: #005e89;
+	color: #ffffff;
+	width: 100px;
+	height: 30px;
+}
+a {
+	
+	text-decoration: none;
+	color: #ffffff;
+}
+a:hover {
+	/* Меняем цвет ссылки при наведении */
+	color: #000000;
+}
+body, html {
+	/**
+	 * Устанавливаем относительное позиционирование для последующих взаимодействий с элементом
+	 * Ставим шрифт по умолчанию "sans-serif"
+	 * Убираем любые отступы
+	 * Устанавливаем ширину на 100%
+	**/
+	position: relative;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 20px;
+}
+
+html {
+	/* Устанавливаем высоту 100% для документа */
+	height: 100%;
+}
+
+body {
+	/**
+	 * Корректируем минимальную высоту тела сайта для размещения футера
+	 * Устанавливаем цвет фона
+	**/
+	min-height: calc(100% - 50px);
+	background-color: #F3FFF3;
+	color: #131313;
+	text-align: center;
+}
+
+header {
+	/**
+	 * Устанавливаем цвет фона
+	 * Устанавливаем высоту элементов
+	**/
+	background-color: #005e89;
+	height: 50px;
+}
+
+header {
+	/**
+	 * Устанавливаем относительное позиционирование для автоматического размещения
+	 * Убираем возможность автоматически переводить текст на новую строку
+	**/
+	position: relative;
+	white-space: nowrap;
+	box-shadow: 0 0 15px #757575;
+}
+
+footer {
+	/**
+	 * Устанавливаем абсолютное позиционирование
+	 * Прикрепляем элемент к нижней части сайта
+	 * Устанавливаем ширину 100%
+	**/
+	position: absolute;
+	bottom: -50px;
+	width: 100%;
+	height: 50px;
+	background-color: #757575;
+}
+
+header div, footer div {
+	/**
+	 * Создаём внутренний отступ сверху
+	 * Позиционируем элемент по центру
+	 * Устанавливаем ширину 90% для центрования
+	**/
+	padding-top: 12px;
+	margin: auto;
+	width: 90%;
+}
+
+main {
+	/**
+	 * Позиционируем элемент по центру
+	 * Устанавливаем ширину 90% для центрования
+	**/
+	width: 60%;
+	margin: auto;
+}
+.title {
+	/**
+	 * Устанавливаем размер текста в 25 пикселей
+	 * Меняем регистр текста в верхний
+	 * Изменяем цвет текста
+	**/
+	font-size: 25px;
+	color: #ffffff;
+}
+
+.subtext {
+	/* Изменяем цвет текста */
+	color: #ffffff;
+}
+
+.list-inline *:not(:first-child):before {
+	/* Перед каждым новым элементом ставим " / " */
+	content: " / ";
+}
+
+.flex {
+	/* Устанавливаем флексовое отображение */
+	display: flex;
+}
+
+img {
+	/* Устанавливаем ширину и высоту всех изображений на сайте */
+	width: 300px;
+	height: 300px;
+}
+
+/* Размещаем изображения в зависимости от класса справа или слева от текста */
+.align-left {
+	float: left;
+	vertical-align: top;
+}
+.align-right {
+	float: right;
+	vertical-align: top;
+}
+
+/* Размещаем текст */
+.text-center {
+	text-align: center;
+}
+.a1 {
+	/**
+	 * Убираем нижнее подчёркивание у ссылок
+	 * Меняем цвет ссылки
+	**/
+	text-decoration: none;
+	color: #ffffff;
+}
+.a1:hover {
+	/* Меняем цвет ссылки при наведении */
+	color: #adcdff;
+}
+.a2 {
+	/**
+	 * Убираем нижнее подчёркивание у ссылок
+	 * Меняем цвет ссылки
+	**/
+	text-decoration: none;
+	color: #ffffff;
+}
+.a2:hover {
+	/* Меняем цвет ссылки при наведении */
+	color: #adcdff;
+}
